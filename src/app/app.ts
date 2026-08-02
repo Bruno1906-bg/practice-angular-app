@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { LandingPage } from './components/landing-page/landing-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [LandingPage],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('practice-angular-app');
-}
+export class App {}
