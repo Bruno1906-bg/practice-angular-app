@@ -2,18 +2,185 @@
   <div class="contenedor">
     <nav>
       <ul>
-        <li><a href="#">Herramientas y Tecnologias </a></li>
-        <li><a href="#">Mis Proyectos</a></li>
-        <li><a href="#">Mi Contacto</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#skills">Herramientas y Tecnologías</a></li>
+        <li><a href="#proyectos">Mis Proyectos</a></li>
+        <li><a href="#contacto">Mi Contacto</a></li>
       </ul>
     </nav>
   </div>
 </header>
-<body>
-  <fieldset>
-    <p>Bruno Benitez Gomez</p>
-    <img src="" alt="imagen pro" />
-  </fieldset>
-  <fieldset class="herramientas">Herramientas y Tecnologias</fieldset>
-  <fieldset>Mis proyectos</fieldset>
-</body>
+
+<main class="contenedor">
+  <!-- ===== PERFIL ===== -->
+  <section id="perfil" class="perfil">
+    <img src="bruno.jpg" alt="Foto de perfil de Bruno Benitez Gomez" class="perfil-imagen" />
+    <div class="perfil-info">
+      <p class="perfil-nombre">Bruno Benitez Gomez</p>
+      <p class="perfil-descripcion">
+        Estudiante de Técnico Superior Universitario en Desarrollo de Software en la Universidad
+        Tecnológica de la Riviera Maya, en formación activa. Desarrollador web con enfoque en
+        frontend y backend, perfil autodidacta y hábito constante de actualización tecnológica.
+        Combino los conocimientos adquiridos en el aula con proyectos personales y académicos para
+        fortalecer mis habilidades prácticas en el desarrollo de software full-stack<!-- breve descripción / rol -->
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== HERRAMIENTAS Y TECNOLOGIAS ===== -->
+  <section id="skills" class="skills">
+    <h2 class="skills-titulo">Herramientas y Tecnologías</h2>
+
+    <div class="skills-grid">
+      <!-- ==== LENGUAJES DE PROGRAMACION ==== -->
+      <div id="lenguajes" class="skill-card lenguajes">
+        <h3>Lenguajes de programación</h3>
+        <ul class="lenguajes-lista">
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>PHP</li>
+          <li>Python</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <!-- <li>Angular</li> -->
+        </ul>
+      </div>
+
+      <!-- ===== FRAMEWORKS ===== -->
+      <div id="frameworks" class="skill-card frameworks">
+        <h3>Frameworks</h3>
+        <ul class="frameworks-lista">
+          <li>React</li>
+          <li>Vue.js</li>
+          <li>Angular</li>
+          <!-- <li>Angular</li> -->
+        </ul>
+      </div>
+
+      <!-- ===== DATABASE ===== -->
+      <div id="bd" class="skill-card bd">
+        <h3>Bases de Datos</h3>
+        <ul class="bd-lista">
+          <li>MySQL</li>
+          <li>Firebase</li>
+          <li>MySQL Workbench</li>
+          <!-- <li>Angular</li> -->
+        </ul>
+      </div>
+
+      <!-- ===== OTRAS HERRAMIENTAS ===== -->
+      <div id="otros" class="skill-card otros">
+        <h3>Otras Herramientas</h3>
+        <ul class="otros-lista">
+          <li>Figma</li>
+          <li>GitHub</li>
+          <!-- <li>Angular</li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MIS PROYECTOS ===== -->
+  <section id="proyectos" class="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="proyectos-grid">
+      <!-- ==== TARJETA DE PROYECTO (repite este bloque por cada proyecto) ==== -->
+      <article class="proyecto-card">
+        <div class="proyecto-logo">
+          <img src="logoMigo.png" alt="Logo-Migo" />
+          <!-- <img src="assets/proyectos/migo-logo.png" alt="Logo MIGO" /> -->
+        </div>
+
+        <h3 class="proyecto-titulo">Migo<!-- MIGO --></h3>
+
+        <p class="proyecto-descripcion">
+          Plataforma de Mascotas Perdidas con panel de publicaciones para mascotas en adopcion o
+          perdidas y directorio veterinario con gran variedad de servicios.
+          <!-- Plataforma web para mascotas perdidas, adopción y directorio veterinario en Playa del Carmen. -->
+        </p>
+
+        <div class="proyecto-tags">
+          <span class="tag">VUE</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Railway</span>
+          <span class="tag">Google Maps API</span>
+          <!-- <span class="tag">Vue.js</span> -->
+          <!-- <span class="tag">MySQL</span> -->
+        </div>
+
+        <div class="proyecto-botones">
+          <a href="https://migo-vue.vercel.app/" class="btn-demo"><!-- href real -->Demo</a>
+          <a href="https://github.com/Bruno1906-bg/Migo-VUE" class="btn-github">GitHub</a>
+        </div>
+      </article>
+
+      <!-- ==== copia y pega la tarjeta de arriba para TriFix ==== -->
+      <article class="proyecto-card">
+        <div class="proyecto-logo">
+          <img src="bruno.jpg" alt="imagen-portafolio" />
+        </div>
+        <h3 class="proyecto-titulo">Portafolio Personal</h3>
+        <p class="proyecto-descripcion">
+          Pequeño portafolio de presentacion personal en el que se enlistan distintas habilidades y
+          manejo de diferentes herramientas tecnlogicas, asi como diferentes ejemplos de proyectos
+          desarrollados.
+        </p>
+        <div class="proyecto-tags">
+          <span class="tag">Angular</span>
+        </div>
+        <div class="proyecto-botones">
+          <a href="#" class="btn-demo">Demo</a>
+          <a href="https://github.com/Bruno1906-bg/practice-angular-app" class="btn-github"
+            >GitHub</a
+          >
+        </div>
+      </article>
+
+      <!-- ==== copia y pega la tarjeta de arriba para App-nimals ==== -->
+      <article class="proyecto-card">
+        <div class="proyecto-logo">
+          <img src="Maint-Hub.jpg" alt="Logo-Maint" />
+        </div>
+        <h3 class="proyecto-titulo">Maint-Hub</h3>
+        <p class="proyecto-descripcion">
+          Este proyecto esta basado sobre el contexto de los problemas de mantenimiento, diseñada
+          para digitalizar y optimizar la gestión de incidencias de mantenimiento en entornos
+          residenciales, educativos y corporativos.
+        </p>
+        <div class="proyecto-tags">
+          <span class="tag">REACT</span>
+          <span class="tag">MYSQL</span>
+        </div>
+        <div class="proyecto-botones">
+          <a href="#" class="btn-demo">Demo</a>
+          <a href="#" class="btn-github">GitHub</a>
+        </div>
+      </article>
+
+      <article class="proyecto-card">
+        <div class="proyecto-logo"></div>
+        <h3 class="proyecto-titulo">App-nimals</h3>
+        <p class="proyecto-descripcion">
+          Diseño para aplicacion Movil diseño UI/UX e interaccion con tabs y pantallas de la
+          aplicacion movil.
+        </p>
+        <div class="proyecto-tags">
+          <span class="tag">REACT-EXPO</span>
+          <span class="tag">REACT-PAPER</span>
+          <span class="tag">Figma</span>
+        </div>
+        <div class="proyecto-botones">
+          <a href="#" class="btn-demo">Demo</a>
+          <a href="#" class="btn-github">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="contacto">
+    <h2>Mi Contacto</h2>
+    <!-- datos de contacto / links -->
+  </section>
+</main>
