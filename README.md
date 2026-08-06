@@ -1,38 +1,55 @@
-<div align="center">
+# Bruno Benitez — Portafolio Personal
 
-# 🅰️ Practice Angular App
-### Proyecto de práctica con Angular
+Portafolio personal desarrollado con **Angular**, creado para presentar mi
+perfil como desarrollador, las tecnologías con las que trabajo y los
+proyectos en los que he participado. El sitio está construido con
+**componentes standalone**, estilizado con CSS puro y pensado con una
+estructura de secciones navegables mediante anclas.
 
-[![Angular](https://img.shields.io/badge/Angular-CLI%2020.3.32-DD0031?logo=angular&logoColor=white)](https://angular.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-</div>
-
-Proyecto generado con **Angular CLI** para practicar componentes, scaffolding, testing y el flujo de desarrollo del framework.
+🔗 Demo: <!-- agrega aquí el link una vez desplegado (Vercel / Netlify / GitHub Pages) -->
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tecnologías utilizadas
 
-- [Requisitos](#-requisitos)
-- [Instalación](#-instalación)
-- [Servidor de Desarrollo](#-servidor-de-desarrollo)
-- [Generación de Código](#-generación-de-código)
-- [Compilación](#-compilación)
-- [Pruebas Unitarias](#-pruebas-unitarias)
-- [Pruebas End-to-End](#-pruebas-end-to-end)
-- [Recursos Adicionales](#-recursos-adicionales)
+- **Angular** (standalone components, sin NgModules)
+- **TypeScript**
+- **HTML5** semántico
+- **CSS3** (Grid, Flexbox, variables, transiciones)
+- **Angular CLI** 20.x
 
 ---
 
-## ✅ Requisitos
+## Secciones del sitio
 
-- Node.js
-- Angular CLI (`npm install -g @angular/cli`)
+| Sección | Descripción |
+|---|---|
+| **Perfil** | Foto, nombre y descripción personal. |
+| **Herramientas y Tecnologías** | Lenguajes, frameworks, bases de datos y otras herramientas, organizadas en tarjetas. |
+| **Proyectos** | Tarjetas con logo, descripción, tags de tecnologías y links a demo/GitHub de cada proyecto. |
+| **Contacto** | Información y enlaces de contacto. |
 
 ---
 
-## 🚀 Instalación
+## Estructura del proyecto
+
+```
+src/
+└── app/
+    └── components/
+        └── landing-page/
+            ├── landing-page.html   # Estructura de las secciones del portafolio
+            ├── landing-page.css    # Estilos del portafolio
+            └── landing-page.ts     # Lógica del componente
+public/
+└── logoMigo.png                   # Assets estáticos servidos desde la raíz
+```
+
+---
+
+## Cómo correr el proyecto localmente
+
+Clona el repositorio e instala las dependencias:
 
 ```bash
 git clone https://github.com/Bruno1906-bg/practice-angular-app.git
@@ -40,29 +57,26 @@ cd practice-angular-app
 npm install
 ```
 
----
-
-## 💻 Servidor de Desarrollo
-
-Para iniciar un servidor local de desarrollo:
+Levanta el servidor de desarrollo:
 
 ```bash
 ng serve
 ```
 
-Una vez iniciado, abre tu navegador en `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques los archivos fuente.
+Abre `http://localhost:4200/` en tu navegador. La app se recarga
+automáticamente al modificar cualquier archivo fuente.
 
 ---
 
-## 🧩 Generación de Código
+## Scaffolding de componentes
 
-Angular CLI incluye herramientas de scaffolding. Para generar un nuevo componente:
+Para generar un nuevo componente:
 
 ```bash
 ng generate component nombre-del-componente
 ```
 
-Para ver todos los esquemas disponibles (`components`, `directives`, `pipes`, etc.):
+Para ver todos los schematics disponibles (components, directives, pipes, etc.):
 
 ```bash
 ng generate --help
@@ -70,56 +84,46 @@ ng generate --help
 
 ---
 
-## 🏗️ Compilación
-
-Para compilar el proyecto:
+## Build de producción
 
 ```bash
 ng build
 ```
 
-Los artefactos de compilación se guardan en el directorio `dist/`. Por defecto, la compilación de producción optimiza la aplicación para rendimiento y velocidad.
+Los artefactos de build se generan en la carpeta `dist/`, optimizados por
+defecto para rendimiento en producción.
 
 ---
 
-## 🧪 Pruebas Unitarias
+## Pruebas
 
-Ejecutar pruebas unitarias con el test runner **Karma**:
+Pruebas unitarias con Karma:
 
 ```bash
 ng test
 ```
 
----
-
-## 🔁 Pruebas End-to-End
-
-Ejecutar pruebas end-to-end (e2e):
+Pruebas end-to-end (requiere configurar un framework, Angular CLI no incluye uno por defecto):
 
 ```bash
 ng e2e
 ```
 
-> ⚠️ Angular CLI no incluye un framework de e2e por defecto — puedes elegir el que mejor se ajuste a tus necesidades.
-
 ---
 
-## 📚 Recursos Adicionales
-
-Para más información sobre Angular CLI, incluyendo referencia detallada de comandos, visita:
-🔗 [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
-
----
-
-## 👤 Autor
+## Autor
 
 **Bruno Benitez Gómez**
-Universidad Tecnológica de la Riviera Maya · TSU Desarrollo de Software Multiplataforma
+Estudiante de Técnico Superior Universitario en Desarrollo de Software
+Multiplataforma — Universidad Tecnológica de la Riviera Maya.
+
+- GitHub: [@Bruno1906-bg](https://github.com/Bruno1906-bg)
+<!-- - LinkedIn: agrega tu link -->
+<!-- - Correo: agrega tu correo -->
 
 ---
 
-<div align="center">
+## Recursos adicionales
 
-*Repositorio personal de práctica con Angular* 🚧
-
-</div>
+Para más información sobre Angular CLI, incluyendo referencia detallada de
+comandos, visita [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
